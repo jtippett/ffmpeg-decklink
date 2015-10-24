@@ -80,7 +80,7 @@ class Ffmpeg < Formula
             "--enable-pthreads",
             "--enable-gpl",
             "--enable-version3",
-            "--enable-hardcdcoded-tables",
+            "--enable-hardcoded-tables",
             "--enable-avresample",
             "--cc=#{ENV.cc}",
             "--host-cflags=#{ENV.cflags}",
