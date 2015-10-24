@@ -1,7 +1,7 @@
 class Ffmpeg < Formula
   homepage "https://ffmpeg.org/"
-  url "https://ffmpeg.org/releases/ffmpeg-2.6.2.tar.bz2"
-  sha256 "889e3aa069b724dc95cbfc79ef83322a8a39d9f6225f39fad1b47294fc1f29ba"
+  url "https://ffmpeg.org/releases/ffmpeg-2.8.1.tar.bz2"
+  sha256 "e2ed5ab28dee1af94336739173eb0019afc21a54e38a96f4e3208e94a07866e2"
 
   head "https://github.com/FFmpeg/FFmpeg.git"
 
@@ -69,8 +69,8 @@ class Ffmpeg < Formula
       # patch `common.mk` for using `clang++` to compile `.cpp` files.
       # `clang++` does not allow flag `-std=c99`.
       patch do
-          url "https://github.com/dche/ffmpeg-decklink/raw/master/patch.diff"
-          sha256 "62253f9fbe8765f04cba6ade97f0e81687978e8caff1b278f176f3e4545ea34c"
+          url "https://github.com/jtippett/ffmpeg-decklink/raw/master/patch.diff"
+          sha256 "6e5e8b58f746929862336c8bea03a47dcd6467900637e16889979364b4221b5d"
       end
   end
 
