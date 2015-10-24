@@ -70,7 +70,7 @@ class Ffmpeg < Formula
       # `clang++` does not allow flag `-std=c99`.
       patch do
           url "https://github.com/jtippett/ffmpeg-decklink/raw/master/patch.diff"
-          sha256 "6e5e8b58f746929862336c8bea03a47dcd6467900637e16889979364b4221b5d"
+          sha256 "3b01f80ca56bc1f8c3f653250a34b490325b30dae6cd9ddadbf55db6b8dc7cbe"
       end
   end
 
@@ -80,7 +80,7 @@ class Ffmpeg < Formula
             "--enable-pthreads",
             "--enable-gpl",
             "--enable-version3",
-            "--enable-hardcoded-tables",
+            "--enable-hardcdcoded-tables",
             "--enable-avresample",
             "--cc=#{ENV.cc}",
             "--host-cflags=#{ENV.cflags}",
